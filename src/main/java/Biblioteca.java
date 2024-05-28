@@ -10,6 +10,11 @@
 public class Biblioteca {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        // Cria uma nova instância da TelaLogin
+        TelaLogin telaLogin = new TelaLogin();
+        
+        // Torna a tela visível
+        telaLogin.setVisible(true);
     }
 }
+
