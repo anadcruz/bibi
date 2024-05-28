@@ -172,15 +172,26 @@ public class TelaLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // tirar esse daqui dps
+         // Fechar a tela de login
+    this.dispose();
+    
+    // Abrir a nova tela
+    TelaPrincipal telaPrincipal = new TelaPrincipal();
+    telaPrincipal.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed
-        // Evento ao click do botão: Fazer login
+        
     }//GEN-LAST:event_jButton1MousePressed
 
     private void jLabel5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MousePressed
         // Evento esqueceu a senha:
+         // Fechar a tela de login
+    this.dispose();
+    
+    // Abrir a nova tela de recuperação de senha
+    TelaRecuperacaoSenha telaRecuperacaoSenha = new TelaRecuperacaoSenha();
+    telaRecuperacaoSenha.setVisible(true);
     }//GEN-LAST:event_jLabel5MousePressed
 
     /**
