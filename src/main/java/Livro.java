@@ -24,11 +24,11 @@ public class Livro implements Serializable{
         this.idLivro = idLivro;
     }
     
-    public Integer get.IdLivro() {
+    public Integer getIdLivro() {
         return idLivro;
     }
     
-    public void set.IdLivro (Integer idLivro) {
+    public void setIdLivro (Integer idLivro) {
         this.idLivro = idLivro;
     }
 }
