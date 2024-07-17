@@ -13,7 +13,7 @@ public class Aluno {
     private String nome;
     private int id;
     private int senha;
-    private int idade;
+    
     private String email;
     
     public String getNome(){
@@ -23,19 +23,13 @@ public class Aluno {
     nome = newNome;
     }
     
-     public int getIdade(){
-    return idade;
-    }
-
-    public void setIdade(int newIdade){
-    this.idade=newIdade;
-    }
+    
      public int getId(){
     return id;
     }
 
     public void setId(int newId){
-    this.idade=newId;
+    this.id=newId;
     }
     
      public int getSenha(){
