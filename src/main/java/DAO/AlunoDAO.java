@@ -3,7 +3,7 @@ package DAO;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import com.controle.acesso.model.Usuario.Aluno;
+import com.controle.acesso.model.Aluno;
 
 import ConexaoBanco.Conexao;
 

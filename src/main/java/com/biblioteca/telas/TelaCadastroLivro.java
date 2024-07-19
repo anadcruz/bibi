@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ;
+package com.biblioteca.telas;
 
+import com.controle.acesso.model.Livro;
+import com.biblioteca.service.ControleCadastroLivro;
 import javax.swing.JOption Pane;
 
 /**
@@ -14,7 +16,7 @@ import javax.swing.JOption Pane;
 public class TelaCadastroLivro extends javax.swing.JFrame {
     
     int i = 0;
-    ControleCadastroLivro o = new ControleCadastroLivro;
+    ControleCadastroLivro o = new ControleCadastroLivro();
     Livro [] vetor;
     
 

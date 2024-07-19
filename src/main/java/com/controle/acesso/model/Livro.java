@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ;
+package com.controle.acesso.model;
 
 /**
  *
@@ -11,7 +11,7 @@ package ;
  */
 public class Livro {
     
-    private static final long serialVersionUID =1L;
+    //private static final long serialVersionUID =1L;
     private Integer idLivro;
     private String titulo;
     private String autor;
@@ -40,74 +40,74 @@ public class Livro {
     }
     
     
-    public String get.Titulo() {
+    public String getTitulo() {
         return titulo;
     }
-    public void set.Titulo (string titulo) {
+    public void setTitulo (String titulo) {
         this.titulo = titulo;
     }
     
     
-    public String get.Autor() {
+    public String getAutor() {
         return autor;
     }
-    public void set.Autor (string autor) {
+    public void setAutor (String autor) {
         this.autor = autor;
     }
 
     
-    public String get.Editora() {
+    public String getEditora() {
         return editora;
     }
-    public void set.Editora (string editora) {
+    public void setEditora (String editora) {
         this.editora = editora;
     }
     
     
-    public String get.Sinopse() {
+    public String getSinopse() {
         return sinopse;
     }
-    public void set.Sinopse (string sinopse) {
+    public void setSinopse (String sinopse) {
         this.sinopse = sinopse;
     }
     
     
-    public String get.Idioma() {
+    public String getIdioma() {
         return idioma;
     }
-    public void set.Idioma (string idioma) {
+    public void setIdioma (String idioma) {
         this.idioma = idioma;
     }
     
     
-    public Integer get.DataPublic() {
+    public Integer getDataPublic() {
         return dataPublic;
     }
-    public void set.DataPublic (Integer dataPublic) {
+    public void setDataPublic (Integer dataPublic) {
         this.dataPublic = dataPublic;
     }
 
     
-    public Integer get.NumPag() {
+    public Integer getNumPag() {
         return numPag;
     }
-    public void set.NumPag (Integer numPag) {
+    public void setNumPag (Integer numPag) {
         this.numPag = numPag;
     }
     
     
-    public Integer get.QuantExemplares() {
+    public Integer getQuantExemplares() {
         return quantExemplares;
     }
-    public void set.QuantExemplares (Integer quantExemplares) {
+    public void setQuantExemplares (Integer quantExemplares) {
         this.quantExemplares = quantExemplares;
     }
     
     
-    public String get.PdfDispo() {
+    public String getPdfDispo() {
         return pdfDispo;
     }
-    public void set.PdfDispo (string pdfDispo) {
+    public void setpdfDispo (String pdfDispo) {
         this.pdfDispo = pdfDispo;
     }
 

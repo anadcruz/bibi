@@ -1,6 +1,6 @@
 
 import com.biblioteca.telas.TelaLogin;
-import com.controle.acesso.model.Usuario.Aluno;
+import com.controle.acesso.model.Aluno;
 
 import DAO.AlunoDAO;
 
