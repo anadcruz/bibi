@@ -13,6 +13,7 @@ public class ControleCadastroLivro {
     static Livro[] vetor = new Livro [25];
     static int i = 0;
     
+    
     public void cadastrar (Livro biblio) {
     
             if (i < 25) {
@@ -25,7 +26,7 @@ public class ControleCadastroLivro {
             
             }
     }
-    public Livro [] retornaValor (){
+    public Livro [] retornaVetor (){
     return vetor;
         
     }

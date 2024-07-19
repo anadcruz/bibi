@@ -10,18 +10,17 @@ package ;
  * @author mariana
  */
 public class Livro {
-    
-    private static final long serialVersionUID =1L;
-    private Integer idLivro;
+    private int idLivro;
     private String titulo;
     private String autor;
     private String editora;
+    private String edicao;
     private String sinopse;
     private String idioma;
-    private Integer dataPublic;
-    private Integer numPag;
-    private Integer quantExemplares;
-    private String pdfDispo;
+    private int dataPublic;
+    private int numPag;
+    private int quantExemplares;
+    private booleano pdfDispo;
     
     
     public Livro () {
@@ -31,90 +30,85 @@ public class Livro {
         this.idLivro = idLivro;
     }
     
-    public Integer getIdLivro() {
+    public int getIdLivro() {
         return idLivro;
     }
     
-    public void setIdLivro (Integer idLivro) {
+    public void setIdLivro (int idLivro) {
         this.idLivro = idLivro;
     }
     
     
-    public String get.Titulo() {
+    public String getTitulo() {
         return titulo;
     }
-    public void set.Titulo (string titulo) {
+    public void setTitulo (String titulo) {
         this.titulo = titulo;
     }
     
     
-    public String get.Autor() {
+    public String getAutor() {
         return autor;
     }
-    public void set.Autor (string autor) {
+    public void setAutor (String autor) {
         this.autor = autor;
     }
 
     
-    public String get.Editora() {
+    public String getEditora() {
         return editora;
     }
-    public void set.Editora (string editora) {
+    public void setEditora (String editora) {
         this.editora = editora;
     }
     
     
-    public String get.Sinopse() {
+    public String getSinopse() {
         return sinopse;
     }
-    public void set.Sinopse (string sinopse) {
+    public void setSinopse (String sinopse) {
         this.sinopse = sinopse;
     }
     
     
-    public String get.Idioma() {
+    public String getIdioma() {
         return idioma;
     }
-    public void set.Idioma (string idioma) {
+    public void setIdioma (String idioma) {
         this.idioma = idioma;
     }
     
     
-    public Integer get.DataPublic() {
+    public int getDataPublic() {
         return dataPublic;
     }
-    public void set.DataPublic (Integer dataPublic) {
+    public void setDataPublic (int dataPublic) {
         this.dataPublic = dataPublic;
     }
 
     
-    public Integer get.NumPag() {
+    public int getNumPag() {
         return numPag;
     }
-    public void set.NumPag (Integer numPag) {
+    public void setNumPag (int numPag) {
         this.numPag = numPag;
     }
     
     
-    public Integer get.QuantExemplares() {
+    public int getQuantExemplares() {
         return quantExemplares;
     }
-    public void set.QuantExemplares (Integer quantExemplares) {
+    public void setQuantExemplares (int quantExemplares) {
         this.quantExemplares = quantExemplares;
     }
     
     
-    public String get.PdfDispo() {
+    public String getPdfDispo() {
         return pdfDispo;
     }
-    public void set.PdfDispo (string pdfDispo) {
+    public void setPdfDispo (String pdfDispo) {
         this.pdfDispo = pdfDispo;
-    }
-
-    public static void main(String[] args){
-    
     }
     
 }
-
 
