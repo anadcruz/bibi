@@ -2,6 +2,8 @@
 
 package com.biblioteca.telas;
 
+import ConexaoBanco.Conexao;
+import javax.swing.JOptionPane;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -176,12 +178,16 @@ public class TelaLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-         // Fechar a tela de login
-    this.dispose();
-    
-    // Abrir a nova tela
-    TelaPrincipal telaPrincipal = new TelaPrincipal();
-    telaPrincipal.setVisible(true);
+         String cpf = jTextField3.getText();
+        String senha = new String(jPasswordField1.getPassword());
+
+        if (Conexao.validarUsuario(cpf, senha)) {
+            this.dispose();
+            TelaPrincipal telaPrincipal = new TelaPrincipal();
+            telaPrincipal.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(this, "CPF ou senha incorretos", "Erro de Login", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MousePressed

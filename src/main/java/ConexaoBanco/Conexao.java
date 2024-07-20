@@ -7,6 +7,8 @@ package ConexaoBanco;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 /**
  *
@@ -15,7 +17,7 @@ import java.sql.SQLException;
 public class Conexao {
     private static final String url ="jdbc:mysql://localhost:3306/bibliotecabd" ;
     private static final String user = "root";
-    private static final String password = "root" ;
+    private static final String password = "10122004" ;
 
     private static Connection conn;
 
@@ -36,6 +38,20 @@ public class Conexao {
 
     }
         }
+    
+    public static boolean validarUsuario(String cpf, String senha) {
+        String sql = "SELECT * FROM aluno WHERE cpf = ? AND senha = ?";
+        try (Connection conn = getConexao();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, cpf);
+            stmt.setString(2, senha);
+            ResultSet rs = stmt.executeQuery();
+            return rs.next(); // Retorna true se encontrar um usuário
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
     }
 
     
