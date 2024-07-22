@@ -21,7 +21,7 @@ public class AlunoDAO {
             ps.setInt(2, aluno.getSenha());
             ps.setString(3, aluno.getEmail());
           
-            ps.setInt(2, aluno.getId());
+            ps.setInt(4, aluno.getId());
             
             ps.execute();
             ps.close();
