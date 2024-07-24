@@ -1,6 +1,7 @@
-com\biblioteca\telas\TelaAluno$1.class
 com\biblioteca\telas\TelaRecuperacaoSenha.class
 com\biblioteca\telas\TelaLogin$1.class
+com\biblioteca\telas\TelaLoginAluno.class
+com\biblioteca\telas\TelaLogin$6.class
 com\biblioteca\telas\TelaPrincipal$1.class
 com\controle\acesso\model\Usuario.class
 com\biblioteca\telas\TelaLogin.class
@@ -16,8 +17,8 @@ com\biblioteca\service\ControleCadastroLivro.class
 com\biblioteca\service\CadastroLivros.class
 com\biblioteca\telas\TelaLogin$2.class
 com\biblioteca\telas\TelaPrincipal.class
-com\biblioteca\telas\TelaAluno.class
 com\biblioteca\telas\TelaPrincipal$2.class
+com\biblioteca\telas\TelaLoginAlunoFrame.class
 com\biblioteca\model\Livro.class
 com\biblioteca\telas\TelaCadastroLivro$1.class
 com\biblioteca\telas\MaisInfo1.class
