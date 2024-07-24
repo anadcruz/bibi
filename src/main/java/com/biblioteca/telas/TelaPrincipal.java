@@ -38,6 +38,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(248, 143, 248));
 
         jButton1.setText("Cadastrar Livro");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Cadastrar Aluno");
 
@@ -90,6 +95,20 @@ public class TelaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // Cria uma nova instância da TelaCadastroLivro
+        TelaCadastroLivro telaCadastroLivro = new TelaCadastroLivro();
+
+        // Define a tela principal como o pai da nova tela
+        telaCadastroLivro.setParent(this);
+
+        // Define a nova tela como visível
+        telaCadastroLivro.setVisible(true);
+
+        // Esconde a tela principal
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -118,12 +137,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        //java.awt.EventQueue.invokeLater(new Runnable() {
-            //public void run() {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
                 new TelaPrincipal().setVisible(true);
             }
-       //});
-    //}
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
