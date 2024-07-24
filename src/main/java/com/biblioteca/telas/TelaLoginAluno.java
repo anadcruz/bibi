@@ -8,12 +8,12 @@ package com.biblioteca.telas;
  *
  * @author anacl
  */
-public class TelaAluno extends javax.swing.JPanel {
+public class TelaLoginAluno extends javax.swing.JPanel {
 
     /**
      * Creates new form TelaAluno
      */
-    public TelaAluno() {
+    public TelaLoginAluno() {
         initComponents();
     }
  public static void main(String args[]) {
@@ -43,7 +43,7 @@ public class TelaAluno extends javax.swing.JPanel {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaAluno().setVisible(true);
+                new TelaLoginAluno().setVisible(true);
             }
         });
     }

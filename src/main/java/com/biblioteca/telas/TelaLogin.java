@@ -4,7 +4,7 @@ package com.biblioteca.telas;
 
 import ConexaoBanco.Conexao;
 import javax.swing.JOptionPane;
-import com.biblioteca.telas.TelaAluno;
+import com.biblioteca.telas.TelaLoginAluno;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -207,7 +207,7 @@ public class TelaLogin extends javax.swing.JFrame {
 
     private void abrirTelaAluno() {
     this.dispose();
-    TelaAluno telaAluno = new TelaAluno();
+    TelaLoginAluno telaAluno = new TelaLoginAluno();
     telaAluno.setVisible(true);
 }
 
@@ -231,7 +231,7 @@ public class TelaLogin extends javax.swing.JFrame {
     this.dispose();
     
     // Abrir a nova tela de recuperação de senha
-    TelaAluno telaAluno = new TelaAluno();
+    TelaLoginAluno telaAluno = new TelaLoginAluno();
     telaAluno.setVisible(true);
     }//GEN-LAST:event_jLabel6MousePressed
 
