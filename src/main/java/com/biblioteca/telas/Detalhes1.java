@@ -188,7 +188,7 @@ public class Detalhes1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          try {
-            // Crie um objeto File para o arquivo PDF
+            // Cria um objeto File para o arquivo PDF
             File pdfFile = new File("C:\\Users\\anacl\\Desktop\\bibi\\src\\main\\resources\\Paul Deitel, Harvey Deitel - Java como Programar - 10° Edição.pdf"); // Substitua "your-pdf.pdf" pelo nome do arquivo
 
             // Abra o arquivo PDF no Desktop

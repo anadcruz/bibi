@@ -11,7 +11,7 @@ public class AlunoDAO {
 
     public void cadastrarAluno(Aluno aluno){
 
-        String sql = "INSERT INTO USUARIO (NOME, SENHA, EMAIL, ID) VALUES (?, ?, ?, ? )" ;
+        String sql = "INSERT INTO aluno (NOME, SENHA, EMAIL, ) VALUES (?, ?, ?, ? )" ;
 
         PreparedStatement ps = null;
 
