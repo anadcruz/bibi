@@ -36,7 +36,7 @@ public class TelaRecuperacaoSenha extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(224, 224, 252));
 
-        jPanel1.setBackground(new java.awt.Color(224, 224, 252));
+        jPanel1.setBackground(new java.awt.Color(214, 201, 241));
 
         jLabel2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         jLabel2.setText("E-mail:");

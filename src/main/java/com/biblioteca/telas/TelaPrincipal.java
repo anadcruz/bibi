@@ -35,16 +35,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(248, 143, 248));
+        jPanel2.setBackground(new java.awt.Color(214, 201, 241));
 
         jButton1.setText("Cadastrar Livro");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
 
         jButton2.setText("Cadastrar Aluno");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Solicitar Emprestimo");
 
@@ -108,6 +108,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         // Esconde a tela principal
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        TelaCadastroAluno telaCadastroAluno = new TelaCadastroAluno();
+        telaCadastroAluno.setVisible(true);
+
+        // Feche a tela atual
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
