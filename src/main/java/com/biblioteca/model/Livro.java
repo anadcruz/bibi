@@ -10,15 +10,24 @@ package com.biblioteca.model;
  */
 public class Livro {
     
-    private final String titulo;
-    private final int idLivro;
-    private String nome;
-    public String getTitulo;
-    public String getidLivro;
-    
+    public int idLivro;
+    public String titulo;
+    private String autor;
+    private String editora;
+    private String edicao;
+    private String sinopse;
+    private String idioma;
+    private int dataPublic;
+    private int numPag;
+    private int quantExemplares;
+    private boolean pdfDispo;
+  
+    // Getters e Setters
+    public int getIdLivro() {
+        return idLivro;
+    }
 
-    public Livro(String titulo, int idLivro) {
-        this.titulo = titulo;
+    public void setIdLivro(int idLivro) {
         this.idLivro = idLivro;
     }
 
@@ -26,9 +35,79 @@ public class Livro {
         return titulo;
     }
 
-    public int getIdLivro() {
-        return idLivro;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getEditora() {
+        return editora;
+    }
+
+    public void setEditora(String editora) {
+        this.editora = editora;
+    }
+
+    public String getEdicao() {
+        return edicao;
+    }
+
+    public void setEdicao(String edicao) {
+        this.edicao = edicao;
+    }
+
+    public String getSinopse() {
+        return sinopse;
+    }
+
+    public void setSinopse(String sinopse) {
+        this.sinopse = sinopse;
+    }
+
+    public String getIdioma() {
+        return idioma;
+    }
+
+    public void setIdioma(String idioma) {
+        this.idioma = idioma;
+    }
+
+    public int getDataPublic() {
+        return dataPublic;
+    }
+
+    public void setDataPublic(int dataPublic) {
+        this.dataPublic = dataPublic;
+    }
+
+    public int getNumPag() {
+        return numPag;
+    }
+
+    public void setNumPag(int numPag) {
+        this.numPag = numPag;
+    }
+
+    public int getQuantExemplares() {
+        return quantExemplares;
+    }
+
+    public void setQuantExemplares(int quantExemplares) {
+        this.quantExemplares = quantExemplares;
+    }
+
+    public boolean isPdfDispo() {
+        return pdfDispo;
+    }
+
+    public void setPdfDispo(boolean pdfDispo) {
+        this.pdfDispo = pdfDispo;
     }
 }
-
-   

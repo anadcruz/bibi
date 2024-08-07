@@ -22,7 +22,7 @@ public class ControleCadastroLivro {
     
             if (i < 25) {
             vetor [i] = biblio;
-            System.out.println ("Livro Cadatrado com Sucesso!" + vetor [i].getTitulo + vetor [i].getidLivro);
+            System.out.println ("Livro Cadatrado com Sucesso!" + vetor [i].titulo + vetor [i].idLivro);
             i++;
             
             } else {
